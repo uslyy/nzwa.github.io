@@ -80,18 +80,18 @@
                   <code id="typed"></code>
                 </div>
                   <br /><code onclick="Hi()">9/10 February 2022 - forever..</code><!--/--><br>
-                   <button id="btnnya" onclick="playaudio()" style="display:none;">play</button>
+                   <button onclick="playaudio()" id="btnclick" style="display:none;">play</button>
         </div></div>
       </div>
     </div>
           </b>
         <script type="text/javascript">
           function playaudio() {
-            var sadmusic = new Audio("Nidji%20-%20laskar%20pelangi%20(slowed).mp3");
+            var sadmusic = new Audio("https://ayng.netlify.app/Nidji%20-%20laskar%20pelangi%20(slowed).mp3");
             sadmusic.play();
           }
           window.onload = function() {
-            document.getElementById('btnnya').click();
+            document.getElementById('btnclick').click();
           }
         </script>
         <script>
