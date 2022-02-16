@@ -80,19 +80,23 @@
                   <code id="typed"></code>
                 </div>
                   <br /><code onclick="Hi()">9/10 February 2022 - forever..</code><!--/--><br>
-                   <button onclick="playaudio()" id="btnclick">play</button>
-        </div></div>
+                   <button onclick="playAudio()" type="button">Play Audio</button>
+                   <button onclick="pauseAudio()" type="button">Pause Audio</button>
+                   <audio id="myAudio">
+                   <source src="https://ayng.netlify.app/Nidji%20-%20laskar%20pelangi%20(slowed).mp3" type="audio/mpeg">
+                   </audio>
+         </div></div>
       </div>
     </div>
           </b>
         <script type="text/javascript">
-          function playaudio() {
-            var sadmusic = new Audio("https://ayng.netlify.app/Nidji%20-%20laskar%20pelangi%20(slowed).mp3");
-            sadmusic.play();
-          }
-          window.onload = function() {
-            document.getElementById('btnclick').click();
-          }
+          var x = document.getElementById("myAudio"); 
+         function playAudio() { 
+         x.play(); 
+         } 
+         function pauseAudio() { 
+         x.pause(); 
+         }
         </script>
         <script>
           new Typed('#typed', {
